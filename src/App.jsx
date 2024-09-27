@@ -1,7 +1,11 @@
+import Home from './pages/Home';
+import { Outlet } from "react-router-dom";
+
 const App = () => {
   return (
-    <div>
-      <h1>Vite + React</h1>
+    <div className="w-screen h-screen bg-[#1F1E24] flex">
+      <Home />
+      <Outlet />
     </div>
   )
 }
